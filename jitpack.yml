@@ -2,4 +2,4 @@ jdk:
   - openjdk25
 
 install:
-  - cd project && ./gradlew publishToMavenLocal -x test -PpubVersion=${VERSION:-jitpack-local}
+  - cd project && ./gradlew publishToMavenLocal -x test -x spotlessApply -x spotlessCheck -x spotlessGroovyGradle -PpubVersion=${VERSION:-jitpack-local}
