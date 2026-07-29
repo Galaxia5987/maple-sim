@@ -40,6 +40,24 @@ https://shenzhen-robotics-alliance.github.io/maple-sim/vendordep/maple-sim.json
 ```
 <br>
 
+### Using with JitPack
+
+This repository now supports JitPack builds directly from tags or commits.
+
+Add JitPack to your repositories:
+
+```groovy
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+```
+
+Then depend on Maple-Sim using the existing Maven coordinates and a Git tag/commit as the version:
+
+```groovy
+implementation 'org.ironmaple:maplesim-java:<git-tag-or-commit>'
+```
+
 > 🙏  Big thanks to [@GrahamSH-LLK](https://www.chiefdelphi.com/u/nstrike/summary) for all the help in setting up the online documentation.
 > 🙏  Big thanks to [@nstrike](https://www.chiefdelphi.com/u/nstrike/summary) for all the help in setting up the Java Docs and VendorDep publishing.
 
